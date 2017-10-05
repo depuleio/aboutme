@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Daniel Puleio - About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+
+  hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #FDFFD2;
+  }
+
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1A9ADA;  /* Green */
+      color: #FDFFD2;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #FDFFD2;
+  }
+  .bg-3 { 
+      background-color: #FDFFD2; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #FDFFD2;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.linkedin.com/in/danielpuleio/">LINKED IN</a></li>
+        <li><a href="DanielPuleio,Resume.pdf">RESUME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h1 class="margin">Daniel Puleio</h1> 
+  <img src="danielpuleio.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Daniel Puleio" width="350" height="350">
+  <h3>Software Developer | Computer Engineer | Problem Solver</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <h2>Education & Research</h2>
+      <h5>BS Computer Engineering at SUNY University at Buffalo</h5>
+      <hr>
+      <h4 class="bg-1" style="padding-top:10px; padding-bottom:10px">Mission Control Lead at UBNL</h4>
+    </div>
+  	<div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p> Worked with University at Buffalo's Nanosatellite Research Laboratory to enhance the ability for our clients to communicate with our program's satellite via a web server. As lead of the Mission Control subsystem, I hold weekly meetings, assign tasks, offer help to students with implementing code and I manage our private Github repository. Built the front end of the mission control webpage using HTML/CSS and JavaScript. Implemented JQuery Ajax functions to transmit data from Client Software to Mission Control Server via URL routes (Restful API). Mission Control's models layer built using Python, Redis and Flask to handle communication with Radio Server. This included handling both uplinks and downlinks coming to and from the satellite. Store valuable information within MongoDB, a large third party database. The satellites will be launched thanks to the help of the Air Force Research Laboratory and NASA</p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row">
+    <a href="https://ubnl.space/" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Search UBNL
+    </a>
+  </div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h2 class="margin">Work Experience</h2><br>
+  <div class="row">
+  	<div class="col-sm-1"></div>
+    <div class="col-md-4 bg-4">
+      <h3 class="bg-1" style="padding-top:10px; padding-bottom:10px">NASA Goddard Space Flight Center</h3>
+      <p style="padding-bottom:2px"> As a software engineering intern, I built a client server application in C++ for NASA’s Radar Control Center which was engineered to listen and receive encoded radar packets on the network using asynchronous UDP sockets. Implemented methods of decoding raw radar packets and checking for the quality of each packet. Supplied a graphical user interface to show NASA’s operators which radar was sending grade tracking data. Server GUI also gave operators the ability to broadcast desired radar packets on the control center’s network via UDP datagrams. Added layer of AES 256 encryption to broadcasted UDP packets for security requirements. Built client GUI application to receive and decrypt the broadcasted radar packets filtered by operator.</p>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4 bg-4">
+      <h3 class="bg-1" style="padding-top:10px; padding-bottom:10px">Telephonics Corporation</h3>
+      <p> As a software engineering intern, I updated Telephonics’ RAMP GUI Software, which is an application that allows a user to feed software to up to twenty hand-held telecommunication units over an RS232, to run on Windows 7. Prior to the update, Telephonics’ RAMP Application used Advantech’s USB Driver to communicate with the RAMP RAIL over Advantech’s USB device. The driver was not compatible with Windows 7 machines. I replaced the Advantech’s USB Driver with Microsoft’s WinUSB Driver and then rewrote code with WinUSB’s API, making the application compatible with Windows 7. I also added features to the Software application, giving Telephonic’s technicians the ability to use a bar scanner to report the serial ID’s of each hand-held unit. </p>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Built by Daniel Puleio</p> 
+</footer>
+
+</body>
+</html>
